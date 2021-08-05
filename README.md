@@ -299,6 +299,7 @@ class OgnlCfg extends DataFlow::Configuration {
   <summary>Hint</summary>
   引入 semmle.code.java.dataflow.TaintTracking 包，使用 TaintTracking::localTaintStep 来判断 node1 与 node2 是否在本地函数内存在污点传递。
 </details>
+
 #### 遗留问题 1
 
 上一步遗留了一个污点传递的情况，其实还有很多方面没有考虑完善，限于时间，当做[扩展阅读](https://securitylab.github.com/research/apache-struts-CVE-2018-11776/)留给大家做课后作业。
@@ -315,10 +316,17 @@ class OgnlCfg extends DataFlow::Configuration {
 ### Reference
 
 [CVE-2018-11776 How to find 5 RCEs in Apache struts with CodeQL](https://securitylab.github.com/research/apache-struts-CVE-2018-11776/)
+
 [OGNL injection in Apache Struts: Discovering exploits with taint tracking](https://securitylab.github.com/research/ognl-injection-apache-struts/)
+
 [Apache Struts double evaluation RCE lottery](https://securitylab.github.com/research/apache-struts-double-evaluation/)
+
 [S2-032](https://cwiki.apache.org/confluence/display/WW/S2-032)
+
 [QL language reference](https://codeql.github.com/docs/ql-language-reference/)
+
 [S2-032远程代码执行漏洞分析](https://pino-hd.github.io/2018/06/19/S2-032%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/)
+
 [Analyzing data flow in Java](https://codeql.github.com/docs/codeql-language-guides/analyzing-data-flow-in-java/)
+
 [About data flow analysis](https://codeql.github.com/docs/writing-codeql-queries/about-data-flow-analysis/)
