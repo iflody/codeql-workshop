@@ -1,5 +1,7 @@
 # CodeQL Workshop: Find bug in apache struts 2
 
+内部培训时使用的材料，参考 Github Workshop 制作：https://github.com/githubsatelliteworkshops/codeql/blob/master/java.md
+
 ## 问题描述
 
 非常多类型的漏洞，其挖掘工作本质上都是找到从不安全的用户输入到一个危险的操作的完整路径，CodeQL 对挖掘这类问题非常擅长，大幅度的降低了漏洞挖掘的门槛，只需要定义好什么是不安全的输入以及什么是危险的操作，剩下的工作交给内置的 DataFlow 模块即可完成。
